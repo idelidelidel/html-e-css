@@ -3,37 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras formatações</title>
+    <title>listas</title>
 </head>
 <body>
-    <h1>Outras formatações</h1>
-    <h2>Código-fonte / Pre´-formatação</h2>
-    <p>O comando <code>documento.getElementById('teste)</code> é escrito em linguagem JavaScript.</p>
+        <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2> 
+    <ol type ="1"> <!-- ol tem parametros, como start, numero para qual vai começar a lista-->
+        <li>Acordar</li>
+        <li>tomar pré-treino</li>
+        <li>malhar</li>
+        <li>almoçar</li>
+        <li>jantar</li>
+        <li>dormir</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <ul type = "square"> <!-- tem outros types-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Queijo</li>
 
-    <pre>
-    <Code>
-    num = int(input('Digite um número))
-    if num % 2 == 0:
-        print(O número é par)
-    else:
-        print(O número é impar)
-    </Code>
-    </pre>
+    </ul>
 
-    <h2>Citações simples</h2>
-    <p>Como diria o pai de um amigo: <q>O computador é um burro muiito rápido</q></p>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="A"></ol>
+            <li>Clipper</li>
+            <li>Fortran</li>
+            <li>Cobol</li>
+        </ol>
 
-    <h2>Citações completas</h2>
-    <p>Bastar usar a tag blockquote. Tem o paramêtro cite, que serve para colocar um link da citação</p>
-    <blockquote>
-        Imagine aqui um citação.
-    </blockquote>
+        <li>Novas</li>
+        <ol type="A" start="5">
+            <li>PHP</li>
+            <LI>Python</LI>
+            <li>Javascript</li> 
+        </ol>
 
-    <h2>Abreviações</h2>
-    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. É muito bom</p>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>NES</li>
+            <ul type="circle">
+                <li>Mario Bros</li>
+                <li>Ninja Gaiden</li>
+            </ul type="circle">
+        <li>SNES</li>
+            <ul type="circle">
+                <li>Mario</li>
+                <li>Donkey kong</li>
+            </ul type="circle">
+        <li>PlayStation</li>
+            <ul type="circle">
+                <li>Final Fantasy</li>
+            </ul type="circle">
+    </ol>ul
 
-    <h2>Texto invertido</h2>
-<p><bdo dir="rtl">Pegou a ideia?</bdo></p>
+    <h2>Lista de definições</h2>
+    <dl>
+        <dt>Termo</dt>
+        <dd>Definição do termo</dd>
+        <dt>Arroz</dt>
+        <dd>É um carboidrato</dd>
+    </dl>
+
 
 </body>
 </html>

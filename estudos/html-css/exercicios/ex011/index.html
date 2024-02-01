@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em html5</title>
+</head>
+<body>
+    
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir em vários dispostivos o navegador ou fique mudando ele de tamanho</p>
+    <picture>
+
+        <source media="(max-width: 800px)" srcset="imagens/pequeno.jpeg" type="image/jpeg">r
+        <source media="(max-width: 1000px)" srcset="imagens/medio.png" type="image/png">
+        <img src="imagens/grande.jpeg" alt="Imagem flexível">
+
+    </picture>
+
+    <h1>Reproduzindo áudios</h1>
+    <p>Aprendendo a dar play</p>
+   <!-- Isso é uma forma de fazer:
+    <audio src="midia/audio-legal.mp3"  controls autoplay></audio>
+    outra forma é tipo carregando todas as opções disponiveis para os navegadores--> 
+    
+    <audio preload="metadata" controls autoplay >
+        <source src="midia/audio-legal.mp3" type="audio/mpeg">
+        <source src="midia/audio-legal.ogg" type="audio/ogg">
+        <source src="midia/audio-legal.wav" type="audio/wav"> <!-- Arquivo pesado-->
+        <p>Se nada tocou, infelizmente o navegador é incompatível. Clique <a href="midia/audio-legal.mp3">aqui para baixar</a></p>
+    </audio>
+
+
+</body>
+</html>
